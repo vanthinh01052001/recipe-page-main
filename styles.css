@@ -1,0 +1,153 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/outfit/static/Outfit-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Outfit-semibold";
+  src: url("./assets/fonts/outfit/static/Outfit-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Outfit";
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 100px 0;
+  background-color: hsl(30, 54%, 90%);
+}
+.card {
+  width: 650px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+}
+.card-img img {
+  background-size: cover;
+  border-radius: 12px;
+  width: 100%;
+}
+.card-title {
+  font-weight: 700;
+  font-size: 48px;
+  color: black;
+  font-family: "Outfit-semibold";
+}
+.card-description {
+  color: hsl(30, 10%, 34%);
+  text-align: center;
+  margin: 0;
+}
+.preparation-time {
+  background-color: hsl(330, 100%, 98%);
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.preparation-time span {
+  margin: 24px 24px 0 24px;
+  font-size: 18px;
+  color: hsl(332, 51%, 32%);
+  font-weight: 600;
+}
+.preparation-time ul li {
+  margin: 0 0 14px 0;
+}
+.preparation-time ul li span {
+  font-size: 16px;
+  color: hsl(24, 5%, 18%);
+  font-weight: 600;
+  margin: 0;
+}
+.ingredients {
+  width: 100%;
+  border-bottom: 1px solid hsl(30, 54%, 90%);
+}
+.ingredients span {
+  font-size: 22px;
+  color: hsl(332, 51%, 32%);
+  font-weight: 700;
+}
+.ingredients ul li {
+  color: hsl(24, 5%, 18%);
+  margin-bottom: 14px;
+}
+.instructions {
+  width: 100%;
+  border-bottom: 1px solid hsl(30, 54%, 90%);
+}
+.instructions span,
+ol {
+  font-size: 22px;
+  color: hsl(332, 51%, 32%);
+  font-weight: 700;
+}
+.instructions ol li {
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(24, 5%, 18%);
+  margin-bottom: 14px;
+}
+.instructions ol li span {
+  font-size: 16px;
+  color: hsl(24, 5%, 18%);
+  font-weight: 600;
+}
+.nutrition {
+  width: 100%;
+}
+.nutrition span {
+  font-size: 22px;
+  color: hsl(332, 51%, 32%);
+  font-weight: 700;
+}
+.nutrition-table {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.nutrition-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-bottom: 1px solid hsl(30, 54%, 90%);
+  padding-bottom: 8px;
+}
+.nutrition-col {
+  flex: 1;
+}
+.nutrition-col:first-child {
+  margin-left: 16px;
+  color: hsl(30, 10%, 34%);
+}
+.nutrition-col:last-child {
+  font-weight: bold;
+  color: hsl(332, 51%, 32%);
+}
+/* ---cssFooter */
+.attribution {
+  padding: 16px 0;
+  font-size: 14px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+.attribution a {
+  color: hsl(330, 100%, 98%);
+}
